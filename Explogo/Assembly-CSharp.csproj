@@ -56,6 +56,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Movement.cs" />
+     <Compile Include="Assets\Scripts\FastFall.cs" />
+     <Compile Include="Assets\Scripts\FullMovement.cs" />
+     <Compile Include="Assets\Scripts\JumpBonus.cs" />
+     <Compile Include="Assets\Scripts\MouseAim.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/GitBackup/Explogo/Explogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
