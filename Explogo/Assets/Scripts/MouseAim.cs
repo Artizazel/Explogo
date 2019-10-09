@@ -8,9 +8,10 @@ public class MouseAim : MonoBehaviour
     Vector2 mouseLook;
     Vector2 smoothV;
     public float sensitivity = 5.0f;
-    public float smoothness = 2.0f;
+    public float smoothness = 10.0f;
 
     GameObject player;
+
 
 
     // Start is called before the first frame update
@@ -30,6 +31,9 @@ public class MouseAim : MonoBehaviour
         smoothV.x = Mathf.Lerp(smoothV.x, mousePoint.x, 1f / smoothness);
         smoothV.y = Mathf.Lerp(smoothV.y, mousePoint.y, 1f / smoothness);
         mouseLook += smoothV;
+
+        mouseLook.y = Mathf.Clamp(mouseLook.y, -30f, -10f);
+
 
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
         player.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, player.transform.up);

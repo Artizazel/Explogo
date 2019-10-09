@@ -9,6 +9,11 @@ public class FastFall : MonoBehaviour
 
     private bool bounced;
 
+    public Transform top;
+
+    public GameObject Explosion;
+
+    private bool falling;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +31,8 @@ public class FastFall : MonoBehaviour
 
         Invoke("resetBounce", 5f);
 
+        falling = false;
+
     }
 
 
@@ -33,12 +40,18 @@ public class FastFall : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey("left shift"))
+        if (Input.GetKeyDown("left shift"))
         {
 
             if(bounced == false)
             {
                 player.velocity = new Vector3(0, -20, 0);
+
+                if (falling == false)
+                {
+                    Instantiate(Explosion, top.position, transform.rotation);
+                    falling = true;
+                }
             }
 
             

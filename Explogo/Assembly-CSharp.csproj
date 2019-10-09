@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Movement.cs" />
+     <Compile Include="Assets\Scripts\CameraAim.cs" />
+     <Compile Include="Assets\Scripts\DelayedDestroy.cs" />
+     <Compile Include="Assets\Scripts\ExplosionBoost.cs" />
      <Compile Include="Assets\Scripts\FastFall.cs" />
      <Compile Include="Assets\Scripts\FullMovement.cs" />
      <Compile Include="Assets\Scripts\JumpBonus.cs" />
