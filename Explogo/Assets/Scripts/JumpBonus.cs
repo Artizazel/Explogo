@@ -98,7 +98,7 @@ public class JumpBonus : MonoBehaviour
                 else if (Input.GetKey(KeyCode.A))
                 {
                     player.AddForce(transform.right * -50000f);
-                    Instantiate(Explosion, Left.position, transform.rotation);
+                    Instantiate(Explosion, Right.position, transform.rotation);
                 }
                 else
                 {

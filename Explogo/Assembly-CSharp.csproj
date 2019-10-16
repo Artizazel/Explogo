@@ -57,6 +57,10 @@
   <ItemGroup>
      <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\Scripts\CameraAim.cs" />
+     <Compile Include="Assets\Scripts\Collision\CollisionBack.cs" />
+     <Compile Include="Assets\Scripts\Collision\CollisionFront.cs" />
+     <Compile Include="Assets\Scripts\Collision\CollisionLeft.cs" />
+     <Compile Include="Assets\Scripts\Collision\CollisionRight.cs" />
      <Compile Include="Assets\Scripts\DelayedDestroy.cs" />
      <Compile Include="Assets\Scripts\ExplosionBoost.cs" />
      <Compile Include="Assets\Scripts\FastFall.cs" />

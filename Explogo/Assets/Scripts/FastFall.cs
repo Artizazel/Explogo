@@ -29,7 +29,7 @@ public class FastFall : MonoBehaviour
 
         player.velocity = new Vector3(0, 5, 0);
 
-        Invoke("resetBounce", 5f);
+        Invoke("resetBounce", 3f);
 
         falling = false;
 
@@ -45,7 +45,7 @@ public class FastFall : MonoBehaviour
 
             if(bounced == false)
             {
-                player.velocity = new Vector3(0, -20, 0);
+                player.velocity = new Vector3(0, -30, 0);
 
                 if (falling == false)
                 {
