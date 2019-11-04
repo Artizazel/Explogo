@@ -55,7 +55,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Movement.cs" />
      <Compile Include="Assets\Scripts\CameraAim.cs" />
      <Compile Include="Assets\Scripts\Collision\CollisionBack.cs" />
      <Compile Include="Assets\Scripts\Collision\CollisionFront.cs" />
@@ -67,6 +66,7 @@
      <Compile Include="Assets\Scripts\FullMovement.cs" />
      <Compile Include="Assets\Scripts\JumpBonus.cs" />
      <Compile Include="Assets\Scripts\MouseAim.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>E:/GitBackup/Explogo/Explogo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
