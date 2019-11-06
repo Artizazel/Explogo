@@ -17,7 +17,7 @@ public class CollisionFront : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        player.AddForce(transform.forward * -50000f);
+        player.AddForce(transform.forward * -40000f);
         Instantiate(Explosion, Front.position, transform.rotation);
 
 

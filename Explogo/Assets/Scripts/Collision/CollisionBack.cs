@@ -19,7 +19,7 @@ public class CollisionBack : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        player.AddForce(transform.forward * 50000f);
+        player.AddForce(transform.forward * 40000f);
         Instantiate(Explosion, Back.position, transform.rotation);
 
 

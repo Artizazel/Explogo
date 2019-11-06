@@ -5,7 +5,7 @@ using UnityEngine;
 public class FullMovement : MonoBehaviour
 {
 
-    public float speed = 10.0f;
+    private float speed = 7f;
 
     // Start is called before the first frame update
     void Start()

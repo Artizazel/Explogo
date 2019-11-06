@@ -17,7 +17,7 @@ public class CollisionRight : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        player.AddForce(transform.right * -50000f);
+        player.AddForce(transform.right * -40000f);
         Instantiate(Explosion, Right.position, transform.rotation);
 
 

@@ -15,6 +15,8 @@ public class FastFall : MonoBehaviour
 
     private bool falling;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +29,11 @@ public class FastFall : MonoBehaviour
 
         bounced = true;
 
-        player.velocity = new Vector3(0, 5, 0);
+        
 
-        Invoke("resetBounce", 3f);
+        player.velocity = new Vector3(player.velocity.x/2 , 5, player.velocity.z/2);
+
+        Invoke("resetBounce", 1f);
 
         falling = false;
 
@@ -45,7 +49,7 @@ public class FastFall : MonoBehaviour
 
             if(bounced == false)
             {
-                player.velocity = new Vector3(0, -30, 0);
+                player.velocity = new Vector3(0, -50, 0);
 
                 if (falling == false)
                 {
