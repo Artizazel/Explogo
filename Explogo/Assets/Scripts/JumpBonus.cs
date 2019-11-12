@@ -44,7 +44,7 @@ public class JumpBonus : MonoBehaviour
 
             if (bounced == false)
             {
-                player.velocity = new Vector3(0, 13, 0);
+                player.velocity = new Vector3(player.velocity.x / 2, 13, player.velocity.z / 2);
                 Instantiate(Explosion, Btm.position, transform.rotation);
             }
 
