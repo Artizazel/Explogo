@@ -21,26 +21,26 @@ public class CameraPull : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Invoke("pushIn", 0.15f);
+        Invoke("pushIn", 0.2f);
         
     }
 
     private void OnTriggerExit(Collider other)
     {
 
-        Invoke("pushOut", 0.15f);
+        Invoke("pushOut", 1f);
 
     }
 
     void pushIn()
     {
-        transform.Translate(0, 0, 5);
+        transform.Translate(0, 0, 4);
     }
 
 
     void pushOut()
     {
-        transform.Translate(0, 0, -5);
+        transform.Translate(0, 0, -4);
     }
 
 

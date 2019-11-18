@@ -11,15 +11,41 @@ public class CollisionRight : MonoBehaviour
 
     public Transform Right;
 
+    bool moveAllowed = true;
 
 
+    void toggleMoveAllowed()
+    {
+
+        if (moveAllowed == true)
+        {
+            moveAllowed = false;
+        }
+        else
+        {
+            moveAllowed = true;
+        }
+
+    }
+
+
+    void destroyScript()
+    {
+
+        Destroy(this);
+
+    }
 
     private void OnTriggerStay(Collider other)
     {
 
-        player.AddForce(transform.right * -40000f);
-        Instantiate(Explosion, Right.position, transform.rotation);
+        if (moveAllowed == true)
+        {
 
+
+            player.AddForce(transform.right * -40000f);
+        Instantiate(Explosion, Right.position, transform.rotation);
+        }
 
     }
 

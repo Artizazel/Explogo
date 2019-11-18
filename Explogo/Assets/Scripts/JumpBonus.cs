@@ -27,6 +27,9 @@ public class JumpBonus : MonoBehaviour
 
     private float speed = 70000;
 
+
+    bool moveAllowed = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +47,7 @@ public class JumpBonus : MonoBehaviour
 
             if (bounced == false)
             {
-                player.velocity = new Vector3(player.velocity.x / 2, 13, player.velocity.z / 2);
+                player.velocity = new Vector3(player.velocity.x, 16, player.velocity.z);
                 Instantiate(Explosion, Btm.position, transform.rotation);
             }
 
@@ -66,7 +69,19 @@ public class JumpBonus : MonoBehaviour
 
     }
 
+    void toggleMoveAllowed()
+    {
 
+        if (moveAllowed == true)
+        {
+            moveAllowed = false;
+        }
+        else
+        {
+            moveAllowed = true;
+        }
+
+    }
 
 
     // Update is called once per frame
@@ -74,48 +89,51 @@ public class JumpBonus : MonoBehaviour
     {
 
 
-        if (Input.GetMouseButtonDown(0))
+        if (moveAllowed == true)
         {
 
-            if (bounced == true)
+            if (Input.GetMouseButtonDown(0))
             {
 
-                if (Input.GetKey(KeyCode.W))
+                if (bounced == true)
                 {
-                    player.AddForce(transform.forward * speed);
-                    Instantiate(Explosion, Back.position, transform.rotation);
-                }
-                else if (Input.GetKey(KeyCode.S))
-                {
-                    player.AddForce(transform.forward * -50000f);
-                    Instantiate(Explosion, Front.position, transform.rotation);
-                }
-                else if (Input.GetKey(KeyCode.D))
-                {
-                    player.AddForce(transform.right * 50000f);
-                    Instantiate(Explosion, Left.position, transform.rotation);
-                }
-                else if (Input.GetKey(KeyCode.A))
-                {
-                    player.AddForce(transform.right * -50000f);
-                    Instantiate(Explosion, Right.position, transform.rotation);
-                }
-                else
-                {
-                    player.AddForce(transform.forward * speed);
-                    Instantiate(Explosion, Back.position, transform.rotation);
+
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        player.AddForce(transform.forward * speed);
+                        Instantiate(Explosion, Back.position, transform.rotation);
+                    }
+                    else if (Input.GetKey(KeyCode.S))
+                    {
+                        player.AddForce(transform.forward * -50000f);
+                        Instantiate(Explosion, Front.position, transform.rotation);
+                    }
+                    else if (Input.GetKey(KeyCode.D))
+                    {
+                        player.AddForce(transform.right * 50000f);
+                        Instantiate(Explosion, Left.position, transform.rotation);
+                    }
+                    else if (Input.GetKey(KeyCode.A))
+                    {
+                        player.AddForce(transform.right * -50000f);
+                        Instantiate(Explosion, Right.position, transform.rotation);
+                    }
+                    else
+                    {
+                        player.AddForce(transform.forward * speed);
+                        Instantiate(Explosion, Back.position, transform.rotation);
+                    }
+
+                    bounced = false;
+
                 }
 
-                bounced = false;
 
             }
 
 
+
         }
-
-
-
-
 
     }
 }

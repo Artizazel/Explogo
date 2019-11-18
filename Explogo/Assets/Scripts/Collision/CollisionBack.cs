@@ -13,16 +13,41 @@ public class CollisionBack : MonoBehaviour
 
     public Transform Back;
 
+    bool moveAllowed = true;
 
+    void toggleMoveAllowed()
+    {
+
+        if (moveAllowed == true)
+        {
+            moveAllowed = false;
+        }
+        else
+        {
+            moveAllowed = true;
+        }
+
+    }
+
+    void destroyScript()
+    {
+
+        Destroy(this);
+
+    }
 
 
     private void OnTriggerStay(Collider other)
     {
 
-        player.AddForce(transform.forward * 40000f);
+        if (moveAllowed == true)
+        {
+
+
+            player.AddForce(transform.forward * 40000f);
         Instantiate(Explosion, Back.position, transform.rotation);
 
-
+        }
     }
 
 

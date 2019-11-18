@@ -13,9 +13,8 @@ ScriptsOnlyBuild:
     - MouseAim
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Level 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -35,8 +34,6 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 54
-      Script: {instanceID: 0}
-    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -61,13 +58,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 10892}
+      Script: {instanceID: 10894}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 11060}
     - Class: 114
-      Script: {instanceID: 11112}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 11248}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 134
@@ -367,6 +364,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 97ea82dcfacf1d2fda35da5e6b1a628e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyFollow
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -475,6 +478,12 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
+      Hash: 4855bbad0c3d97cea8f21a89f8d4fb29
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraPull
+  - hash:
+      serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -553,6 +562,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 5020937e29342ed3ec4966ee80d96bad
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyCollision
+  - hash:
+      serializedVersion: 2
       Hash: 85c97bcc5f84eeb0999d75902803b99d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -569,13 +584,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 4855bbad0c3d97cea8f21a89f8d4fb29
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraPull
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Level 1.unity
   playerPath: E:/GitBackup/Explogo/Pre-Alpha/Explogo.exe
