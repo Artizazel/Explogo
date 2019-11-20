@@ -58,7 +58,7 @@ public class DeathReset : MonoBehaviour
     void resetNitro()
     {
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 
     }

@@ -15,6 +15,11 @@ public class EnemyFollow : MonoBehaviour
 
     public int velocityTimer = 0;
 
+    bool playerDetected = false;
+
+    public Collider detectionSphere;
+
+    bool moveAllowed = true;
 
     // Start is called before the first frame update
     void Start()
@@ -28,26 +33,72 @@ public class EnemyFollow : MonoBehaviour
         enemyRig = GetComponent<Rigidbody>();
     }
 
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if(other.name == "Nitro")
+        {
+
+
+            detectionSphere.enabled = false;
+
+            playerDetected = true;
+
+
+        }
+
+
+    }
+
+
+    void toggleMoveAllowed()
+    {
+
+        if (moveAllowed == true)
+        {
+            moveAllowed = false;
+
+            enemyRig.velocity = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            moveAllowed = true;
+        }
+
+
+
+    }
+
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
 
 
-
-        enemyTrans.LookAt(playerTrans);
-
-
-        
-        
-        enemyRig.AddForce(enemyTrans.forward * 20);
-
-
-
-        velocityTimer++;
-        
-        if(velocityTimer == 200)
+        if (playerDetected == true)
         {
-            velocityReset();
+            if (moveAllowed == true)
+            {
+
+                enemyTrans.LookAt(playerTrans);
+
+
+
+
+                enemyRig.AddForce(enemyTrans.forward * 20000);
+
+
+
+                velocityTimer++;
+
+                if (velocityTimer == 200)
+                {
+                    velocityReset();
+                }
+            }
+
         }
 
 

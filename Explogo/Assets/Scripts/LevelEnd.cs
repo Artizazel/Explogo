@@ -17,6 +17,8 @@ public class LevelEnd : MonoBehaviour
 
     public GameObject boostScript;
 
+    public GameObject enemy;
+
     bool firstEnter = true;
 
     // Start is called before the first frame update
@@ -31,27 +33,39 @@ public class LevelEnd : MonoBehaviour
         
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
 
-        if(firstEnter == true)
+
+        if(other.tag != "Enemy")
         {
-            levelScreenGroup.alpha = 1;
-            levelScreenGroup.interactable = true;
-            levelScreenGroup.blocksRaycasts = true;
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
 
-            firstEnter = false;
+            
+            if (firstEnter == true)
+            {
 
-            camera.SendMessage("toggleMoveAllowed");
+                firstEnter = false;
+                levelScreenGroup.alpha = 1;
+                levelScreenGroup.interactable = true;
+                levelScreenGroup.blocksRaycasts = true;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
 
-            movementScript.SendMessage("toggleMoveAllowed");
+                enemy.SendMessage("toggleMoveAllowed");
 
-            boostScript.SendMessage("toggleMoveAllowed");
+                camera.SendMessage("toggleMoveAllowed");
 
-            Invoke("resetNitro", 3f);
+                movementScript.SendMessage("toggleMoveAllowed");
+
+                boostScript.SendMessage("toggleMoveAllowed");
+
+                Invoke("resetNitro", 3f);
+            }
+
+
         }
+
+        
 
         
     }
