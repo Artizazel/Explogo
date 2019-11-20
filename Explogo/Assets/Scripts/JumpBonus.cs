@@ -37,7 +37,7 @@ public class JumpBonus : MonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay()
     {
 
         bounced = false;

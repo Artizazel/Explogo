@@ -5,7 +5,7 @@ using UnityEngine;
 public class FullMovement : MonoBehaviour
 {
 
-    private float speed = 7f;
+    private float speed = 15f;
 
     bool moveAllowed = true;
 
