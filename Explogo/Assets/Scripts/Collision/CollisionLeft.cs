@@ -15,6 +15,8 @@ public class CollisionLeft : MonoBehaviour
 
     bool moveAllowed = true;
 
+    public AudioSource boom;
+
 
     void toggleMoveAllowed()
     {
@@ -46,8 +48,8 @@ public class CollisionLeft : MonoBehaviour
         if (moveAllowed == true)
         {
 
-
-            player.AddForce(transform.right * 40000f);
+            boom.Play();
+            player.AddForce(transform.right * 60000f);
             Instantiate(Explosion, Left.position, transform.rotation);
 
         }

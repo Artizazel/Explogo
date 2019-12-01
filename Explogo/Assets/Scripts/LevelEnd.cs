@@ -11,6 +11,8 @@ public class LevelEnd : MonoBehaviour
 
     public GameObject nitro;
 
+    public Rigidbody nitroRig;
+
     public GameObject movementScript;
 
     public GameObject camera;
@@ -73,11 +75,12 @@ public class LevelEnd : MonoBehaviour
 
     void resetNitro()
     {
-
+        nitroRig.velocity = new Vector3(0, 0, 0);
 
         nitro.transform.position = new Vector3(goal.transform.position.x, goal.transform.position.y + 2, goal.transform.position.z);
-        
 
+        
+        
 
     }
 

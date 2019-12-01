@@ -8,8 +8,17 @@ public class CameraPull : MonoBehaviour
 
     public Transform camTrans;
 
+    public Transform cameraPoint;
+
+    public Transform pullPoint;
 
     private float shiftVal = 5000;
+
+    private Vector3 startPosition;
+
+    bool inObject = false;
+
+    bool resettingCamera = false;
 
 
     // Start is called before the first frame update
@@ -21,7 +30,7 @@ public class CameraPull : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Invoke("pushIn", 0.2f);
+        Invoke("pushIn", 0.5f);
         
     }
 
@@ -34,13 +43,15 @@ public class CameraPull : MonoBehaviour
 
     void pushIn()
     {
-        transform.Translate(0, 0, 4);
+        resettingCamera = false;
+        inObject = true;
     }
 
 
     void pushOut()
     {
-        transform.Translate(0, 0, -4);
+        inObject = false;
+        resettingCamera = true;
     }
 
 
@@ -48,6 +59,18 @@ public class CameraPull : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (inObject == true)
+        {
+            camTrans.position = Vector3.MoveTowards(camTrans.position, pullPoint.position, 0.2f);
+        }
+
+
+        if (resettingCamera == true)
+        {
+            camTrans.position = Vector3.MoveTowards(camTrans.position, cameraPoint.position, 1f);
+        }
     }
+
 }
+

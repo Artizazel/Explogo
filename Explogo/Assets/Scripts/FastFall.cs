@@ -7,6 +7,8 @@ public class FastFall : MonoBehaviour
 
     public Rigidbody player;
 
+    public AudioSource boom;
+
     private bool bounced;
 
     public Transform top;
@@ -15,6 +17,11 @@ public class FastFall : MonoBehaviour
 
     private bool falling;
 
+
+    public FastFall()
+    {
+
+    }
 
 
     // Start is called before the first frame update
@@ -53,6 +60,7 @@ public class FastFall : MonoBehaviour
 
                 if (falling == false)
                 {
+                    boom.Play();
                     Instantiate(Explosion, top.position, transform.rotation);
                     falling = true;
                 }
