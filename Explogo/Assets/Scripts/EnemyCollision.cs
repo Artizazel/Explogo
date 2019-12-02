@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyCollision : MonoBehaviour
 {
 
+    public AudioSource blip;
 
     public GameObject evilExplosion;
 
@@ -30,6 +31,7 @@ public class EnemyCollision : MonoBehaviour
 
 
         Instantiate(evilExplosion, enemyTrans);
+        blip.Play();
 
     }
 

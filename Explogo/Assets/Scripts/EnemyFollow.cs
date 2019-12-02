@@ -34,20 +34,10 @@ public class EnemyFollow : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other)
+    void detected()
     {
 
-        if(other.name == "Nitro")
-        {
-
-
-            detectionSphere.enabled = false;
-
             playerDetected = true;
-
-
-        }
-
 
     }
 

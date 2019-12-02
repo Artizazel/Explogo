@@ -21,6 +21,8 @@ public class LevelEnd : MonoBehaviour
 
     public GameObject enemy;
 
+    public AudioSource blip;
+
     bool firstEnter = true;
 
     // Start is called before the first frame update
@@ -45,6 +47,8 @@ public class LevelEnd : MonoBehaviour
             
             if (firstEnter == true)
             {
+
+                blip.Play();
 
                 firstEnter = false;
                 levelScreenGroup.alpha = 1;

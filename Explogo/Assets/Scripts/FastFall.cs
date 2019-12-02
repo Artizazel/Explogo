@@ -36,10 +36,11 @@ public class FastFall : MonoBehaviour
 
         bounced = true;
 
-        
 
-        player.velocity = new Vector3(player.velocity.x/2 , 5, player.velocity.z/2);
-
+        if (other.tag == "Floor")
+        {
+            player.velocity = new Vector3(0, 7, 0);
+        }
         Invoke("resetBounce", 1f);
 
         falling = false;

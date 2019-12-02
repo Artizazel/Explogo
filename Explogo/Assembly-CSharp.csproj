@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\DeathReset.cs" />
     <Compile Include="Assets\Scripts\DelayedDestroy.cs" />
     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
+    <Compile Include="Assets\Scripts\EnemyDetect.cs" />
     <Compile Include="Assets\Scripts\EnemyFollow.cs" />
     <Compile Include="Assets\Scripts\FastFall.cs" />
     <Compile Include="Assets\Scripts\FullMovement.cs" />
