@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5236782732110571979
 Transform:
@@ -361,7 +361,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3422076712224029157
 Transform:
@@ -463,7 +463,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1193649211881594545
 Transform:
@@ -554,7 +554,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6139295347046369491
 Transform:
@@ -633,7 +633,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8509339538068003898
 Transform:
@@ -800,7 +800,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &3065484336637653138
 Transform:
@@ -848,6 +848,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -934,6 +939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1018,6 +1028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1104,6 +1119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1188,6 +1208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1274,6 +1299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1358,6 +1388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1444,6 +1479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1528,6 +1568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1614,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1698,6 +1748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1789,6 +1844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1873,6 +1933,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -1964,6 +2029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2048,6 +2118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -2134,6 +2209,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2218,6 +2298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -2304,6 +2389,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2389,6 +2479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2473,6 +2568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -2564,6 +2664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2653,6 +2758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -2744,6 +2854,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2834,6 +2949,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2919,6 +3039,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3003,6 +3128,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -3094,6 +3224,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3179,6 +3314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3263,6 +3403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -3354,6 +3499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3438,6 +3588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -3524,6 +3679,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3608,6 +3768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -3699,6 +3864,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3783,6 +3953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -3874,6 +4049,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3958,6 +4138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4044,6 +4229,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4128,6 +4318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4214,6 +4409,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4298,6 +4498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4384,6 +4589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4468,6 +4678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4559,6 +4774,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4643,6 +4863,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4729,6 +4954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4814,6 +5044,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4888,6 +5123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -4974,6 +5214,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5058,6 +5303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -5144,6 +5394,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5228,6 +5483,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -5319,6 +5579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5408,6 +5673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -5499,6 +5769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5583,6 +5858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -5674,6 +5954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5758,6 +6043,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -5844,6 +6134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5928,6 +6223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -6014,6 +6314,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6098,6 +6403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
@@ -6189,6 +6499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lit Window (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6273,6 +6588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lit Window (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823865037534843556, guid: 0916ee8af1cc3484db4f64583fc311ab,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7120117698915652174, guid: 0916ee8af1cc3484db4f64583fc311ab,
         type: 3}
