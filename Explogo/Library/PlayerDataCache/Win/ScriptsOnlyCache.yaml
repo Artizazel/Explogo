@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraPull
+    - CentreCollision
     - CollisionBack
     - CollisionFront
     - CollisionLeft
@@ -9,13 +10,17 @@ ScriptsOnlyBuild:
     - DeathReset
     - DelayedDestroy
     - EnemyCollision
+    - EnemyDetect
     - EnemyFollow
     - FastFall
     - FullMovement
+    - Highscores
     - JumpBonus
     - LevelEnd
     - LevelScreen
     - MouseAim
+    - Timer
+    - WallBounce
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -26,6 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Level 1.unity:
@@ -53,7 +59,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 89
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -64,45 +72,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9778}
     - Class: 114
-      Script: {instanceID: 9810}
+      Script: {instanceID: 9786}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 9812}
     - Class: 114
-      Script: {instanceID: 9922}
+      Script: {instanceID: 9852}
     - Class: 114
-      Script: {instanceID: 10032}
+      Script: {instanceID: 9892}
     - Class: 114
-      Script: {instanceID: 10078}
+      Script: {instanceID: 9926}
     - Class: 114
-      Script: {instanceID: 10222}
+      Script: {instanceID: 10038}
     - Class: 114
-      Script: {instanceID: 10236}
+      Script: {instanceID: 10084}
     - Class: 114
-      Script: {instanceID: 10396}
+      Script: {instanceID: 10228}
     - Class: 114
-      Script: {instanceID: 10400}
+      Script: {instanceID: 10242}
+    - Class: 114
+      Script: {instanceID: 10402}
     - Class: 114
       Script: {instanceID: 10406}
     - Class: 114
-      Script: {instanceID: 10564}
+      Script: {instanceID: 10412}
     - Class: 114
-      Script: {instanceID: 10606}
+      Script: {instanceID: 10570}
     - Class: 114
-      Script: {instanceID: 10894}
+      Script: {instanceID: 10612}
     - Class: 114
-      Script: {instanceID: 11006}
+      Script: {instanceID: 10752}
     - Class: 114
-      Script: {instanceID: 11060}
+      Script: {instanceID: 10798}
     - Class: 114
-      Script: {instanceID: 11114}
+      Script: {instanceID: 10902}
     - Class: 114
-      Script: {instanceID: 11248}
+      Script: {instanceID: 11014}
     - Class: 114
-      Script: {instanceID: 11354}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11122}
     - Class: 114
-      Script: {instanceID: 11406}
+      Script: {instanceID: 11256}
+    - Class: 114
+      Script: {instanceID: 11362}
+    - Class: 114
+      Script: {instanceID: 11392}
+    - Class: 114
+      Script: {instanceID: 11414}
+    - Class: 114
+      Script: {instanceID: 16000}
+    - Class: 114
+      Script: {instanceID: 200244}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -129,106 +149,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 225
       Script: {instanceID: 0}
-    - Class: 258
+    - Class: 241
       Script: {instanceID: 0}
-    Assets/Scenes/Level 2.unity:
-    - Class: 1
+    - Class: 243
       Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9660}
-    - Class: 114
-      Script: {instanceID: 9778}
-    - Class: 114
-      Script: {instanceID: 9810}
-    - Class: 114
-      Script: {instanceID: 9850}
-    - Class: 114
-      Script: {instanceID: 9922}
-    - Class: 114
-      Script: {instanceID: 10032}
-    - Class: 114
-      Script: {instanceID: 10078}
-    - Class: 114
-      Script: {instanceID: 10222}
-    - Class: 114
-      Script: {instanceID: 10236}
-    - Class: 114
-      Script: {instanceID: 10396}
-    - Class: 114
-      Script: {instanceID: 10400}
-    - Class: 114
-      Script: {instanceID: 10406}
-    - Class: 114
-      Script: {instanceID: 10564}
-    - Class: 114
-      Script: {instanceID: 10894}
-    - Class: 114
-      Script: {instanceID: 11006}
-    - Class: 114
-      Script: {instanceID: 11060}
-    - Class: 114
-      Script: {instanceID: 11114}
-    - Class: 114
-      Script: {instanceID: 11248}
-    - Class: 114
-      Script: {instanceID: 11354}
-    - Class: 114
-      Script: {instanceID: 11406}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 122
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 134
-      Script: {instanceID: 0}
-    - Class: 135
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 198
-      Script: {instanceID: 0}
-    - Class: 199
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 258
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -273,6 +198,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 3e3e1a9f645ba28355561b61b90f3ad7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WallBounce
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -323,13 +254,19 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: b13341b2485d670f76034954ed7dec39
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CentreCollision
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: b40bbcc7d085f01163129260c5fa375d
+      Hash: c4c3f097b0b8a46e6187168232d12f4a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: JumpBonus
@@ -374,6 +311,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: CameraFollow
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: LevelScreen
   - hash:
       serializedVersion: 2
@@ -389,7 +332,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 42d00b2cf6d9f9dcb466ef3aca5f0c0d
+      Hash: 0030b9e0cbbfaf00d6ed41fc8478cb53
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FastFall
@@ -461,19 +404,19 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 898ab511481629ad9f43ce7cbef83e1e
+      Hash: ab02c984e1b1b17dc8cc5c04a8637225
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollisionFront
   - hash:
       serializedVersion: 2
-      Hash: ce1eae5955dbe3cafea45801b0b98ad9
+      Hash: 8e9eef0fb91a284c6670c27bb4b9e934
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelEnd
   - hash:
       serializedVersion: 2
-      Hash: 6d52e13b37f83a694cc59b5e8514566e
+      Hash: 81e65b68d9587aa821837bbc17230f40
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollisionRight
@@ -563,6 +506,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: b8b42ba420b738adfcdbdea870d5e6d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyDetect
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -575,7 +524,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 383c125cdd239ac18c0d3fc65234a6de
+      Hash: 91bc5f9e088ddaa555e9c11f1245afa7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollisionLeft
@@ -605,7 +554,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 4c4f9b5f53a7f9fcf65491c08e33de84
+      Hash: be354714dc888d7805e77be3bd8e65ee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CollisionBack
@@ -629,7 +578,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 4855bbad0c3d97cea8f21a89f8d4fb29
+      Hash: e77b96d36d65b8a106f9d26dea388de9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CameraPull
@@ -713,7 +662,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 5020937e29342ed3ec4966ee80d96bad
+      Hash: 2daede736996337a31d2abea1598d95d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyCollision
@@ -741,8 +690,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: d9e917149b2304365b013b06b1eb566a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Highscores
+  - hash:
+      serializedVersion: 2
+      Hash: f211fbca6aad358765a83c8084e97804
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level 1.unity
-  - Assets/Scenes/Level 2.unity
   playerPath: E:/GitBackup/Explogo/Pre-Alpha/Explogo.exe

@@ -22,7 +22,7 @@ public class CentreCollision : MonoBehaviour
         inObj++;
 
 
-        if (inObj == 20)
+        if (inObj == 10)
         {
             nitro.transform.Translate(transform.up * 10);
         }

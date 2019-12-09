@@ -7,6 +7,8 @@ public class LevelEnd : MonoBehaviour
 
     public CanvasGroup levelScreenGroup;
 
+    public GameObject timer;
+
     public GameObject goal;
 
     public GameObject nitro;
@@ -65,6 +67,9 @@ public class LevelEnd : MonoBehaviour
 
                 boostScript.SendMessage("toggleMoveAllowed");
 
+                timer.SendMessage("endScript");
+
+
                 Invoke("resetNitro", 3f);
             }
 
@@ -83,8 +88,7 @@ public class LevelEnd : MonoBehaviour
 
         nitro.transform.position = new Vector3(goal.transform.position.x, goal.transform.position.y + 2, goal.transform.position.z);
 
-        
-        
+        nitroRig.isKinematic = true;
 
     }
 

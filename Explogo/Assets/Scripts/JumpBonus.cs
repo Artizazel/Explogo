@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JumpBonus : MonoBehaviour
 {
@@ -31,6 +32,10 @@ public class JumpBonus : MonoBehaviour
 
     private float speed = 70000;
 
+    public Image jumpBoost;
+
+    public Image boomBoost;
+
 
     bool moveAllowed = true;
 
@@ -50,8 +55,8 @@ public class JumpBonus : MonoBehaviour
 
         bounced = false;
 
+        jumpBoost.color = Color.white;
 
-        
 
 
     }
@@ -64,6 +69,8 @@ public class JumpBonus : MonoBehaviour
         if (other.tag == "Floor")
         {
             bounced = false;
+
+            boomBoost.color = Color.white;
 
             boostNum = 1;
         }
@@ -95,7 +102,10 @@ public class JumpBonus : MonoBehaviour
 
             if (bounced == false)
             {
-                player.velocity = new Vector3(player.velocity.x, 16, player.velocity.z);
+
+                jumpBoost.color = Color.clear;
+
+                player.velocity = new Vector3(player.velocity.x, 20, player.velocity.z);
                 Instantiate(Explosion, Btm.position, transform.rotation);
 
                 boom.Play();
@@ -124,38 +134,36 @@ public class JumpBonus : MonoBehaviour
                     {
                         player.velocity = new Vector3(0, player.velocity.y, 0);
                         player.AddForce(transform.forward * speed);
-                        player.AddForce(transform.up * 10000);
                         Instantiate(Explosion, Back.position, transform.rotation);
                     }
                     else if (Input.GetKey(KeyCode.S))
                     {
                         player.velocity = new Vector3(0, player.velocity.y, 0);
                         player.AddForce(transform.forward * -50000f);
-                        player.AddForce(transform.up * 10000);
                         Instantiate(Explosion, Front.position, transform.rotation);
                     }
                     else if (Input.GetKey(KeyCode.D))
                     {
                         player.velocity = new Vector3(0, player.velocity.y, 0);
                         player.AddForce(transform.right * 50000f);
-                        player.AddForce(transform.up * 10000);
                         Instantiate(Explosion, Left.position, transform.rotation);
                     }
                     else if (Input.GetKey(KeyCode.A))
                     {
                         player.velocity = new Vector3(0, player.velocity.y, 0);
                         player.AddForce(transform.right * -50000f);
-                        player.AddForce(transform.up * 10000);
                         Instantiate(Explosion, Right.position, transform.rotation);
                     }
                     else
                     {
                         player.velocity = new Vector3(0, player.velocity.y, 0);
                         player.AddForce(transform.forward * speed);
-                        player.AddForce(transform.up * 10000);
                         Instantiate(Explosion, Back.position, transform.rotation);
                     }
 
+                    player.AddForce(transform.up * 15000);
+
+                    boomBoost.color = Color.clear;
                     boostNum--;
 
                 }

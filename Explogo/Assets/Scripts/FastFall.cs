@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FastFall : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class FastFall : MonoBehaviour
     public GameObject Explosion;
 
     private bool falling;
+
+    public Image downBoostCooldown;
+
 
 
     public FastFall()
@@ -36,12 +40,14 @@ public class FastFall : MonoBehaviour
 
         bounced = true;
 
+        downBoostCooldown.color = Color.white;
 
         if (other.tag == "Floor")
         {
             player.velocity = new Vector3(0, 7, 0);
+            
         }
-        Invoke("resetBounce", 1f);
+        Invoke("resetBounce", 0.5f);
 
         falling = false;
 
@@ -58,6 +64,8 @@ public class FastFall : MonoBehaviour
             if(bounced == false)
             {
                 player.velocity = new Vector3(0, -30, 0);
+
+                downBoostCooldown.color = Color.clear;
 
                 if (falling == false)
                 {
