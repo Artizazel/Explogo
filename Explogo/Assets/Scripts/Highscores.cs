@@ -30,6 +30,8 @@ public class Highscores : MonoBehaviour
 
     public Text third;
 
+    public AudioSource victory;
+
     Text[] scoreboard = new Text[3];
 
 
@@ -94,6 +96,7 @@ public class Highscores : MonoBehaviour
             highscoreScreen.blocksRaycasts = true;
             highscoreScreen.interactable = true;
 
+            victory.Play();
 
             setHighscore(highscorePos, newHighscore);
 
@@ -129,6 +132,8 @@ public class Highscores : MonoBehaviour
         endScreen.alpha = 1;
         endScreen.blocksRaycasts = true;
         endScreen.interactable = true;
+
+
 
         getHighscores();
 

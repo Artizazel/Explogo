@@ -90,39 +90,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10242}
     - Class: 114
-      Script: {instanceID: 10402}
+      Script: {instanceID: 10322}
+    - Class: 114
+      Script: {instanceID: 10370}
     - Class: 114
       Script: {instanceID: 10406}
     - Class: 114
-      Script: {instanceID: 10412}
+      Script: {instanceID: 10410}
     - Class: 114
-      Script: {instanceID: 10570}
+      Script: {instanceID: 10416}
     - Class: 114
-      Script: {instanceID: 10612}
+      Script: {instanceID: 10574}
     - Class: 114
-      Script: {instanceID: 10752}
+      Script: {instanceID: 10616}
     - Class: 114
-      Script: {instanceID: 10798}
+      Script: {instanceID: 10756}
     - Class: 114
-      Script: {instanceID: 10902}
+      Script: {instanceID: 10802}
     - Class: 114
-      Script: {instanceID: 11014}
+      Script: {instanceID: 10906}
     - Class: 114
-      Script: {instanceID: 11068}
+      Script: {instanceID: 11018}
     - Class: 114
-      Script: {instanceID: 11122}
+      Script: {instanceID: 11072}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11126}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11260}
     - Class: 114
-      Script: {instanceID: 11392}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11414}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 16000}
-    - Class: 114
-      Script: {instanceID: 200244}
+      Script: {instanceID: 11418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -390,6 +390,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: b68755733c104385efebbb6934ec1c82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Highscores
+  - hash:
+      serializedVersion: 2
+      Hash: f211fbca6aad358765a83c8084e97804
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -690,18 +702,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: d9e917149b2304365b013b06b1eb566a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Highscores
-  - hash:
-      serializedVersion: 2
-      Hash: f211fbca6aad358765a83c8084e97804
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Timer
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level 1.unity
