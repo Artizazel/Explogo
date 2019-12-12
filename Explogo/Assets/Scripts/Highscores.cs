@@ -45,7 +45,14 @@ public class Highscores : MonoBehaviour
         scoreboard[1] = second;
         scoreboard[0] = third;
 
+        //PlayerPrefs.DeleteAll();
+
+
+        fillArray();
+
+       
         //resetScores();
+        
 
         getHighscores();
 
@@ -211,6 +218,8 @@ public class Highscores : MonoBehaviour
 
             Debug.Log(highscoreNames[i]);
 
+            Debug.Log(highscores[i]);
+
             string hiScore = highscores[i].ToString();
 
             hiScore = hiScore.Insert(hiScore.Length - 2, ":");
@@ -233,13 +242,33 @@ public class Highscores : MonoBehaviour
     {
 
 
-
+        
         for (int i = 0; i < highscores.Length; i++)
         {
 
             PlayerPrefs.SetString("h" + i.ToString(), "Randy");
 
             PlayerPrefs.SetFloat(i.ToString(), 999999);
+
+
+        }
+        
+
+    }
+
+    void fillArray()
+    {
+
+
+
+        for (int i = 0; i < highscores.Length; i++)
+        {
+
+            highscoreNames[i] = "Randy"; 
+
+
+            highscores[i] = 999999;
+
 
 
         }
@@ -252,11 +281,18 @@ public class Highscores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
 
 
 
+        if (Input.GetKey(KeyCode.Equals) && (Input.GetKey(KeyCode.Z)))
+        {
+            resetScores();
+        }
 
+        if (Input.GetKey(KeyCode.Equals) && (Input.GetKey(KeyCode.X)))
+        {
+            PlayerPrefs.DeleteAll();
+        }
 
 
     }

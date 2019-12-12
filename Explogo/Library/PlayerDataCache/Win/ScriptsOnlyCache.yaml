@@ -23,6 +23,7 @@ ScriptsOnlyBuild:
     - WallBounce
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -704,4 +705,4 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level 1.unity
-  playerPath: E:/GitBackup/Explogo/Pre-Alpha/Explogo.exe
+  playerPath: C:/Users/sbloxham2/Documents/GitHub/Explogo/Pre-Alpha/Explogo.exe
