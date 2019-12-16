@@ -51,13 +51,15 @@ public class LevelEnd : MonoBehaviour
             {
 
                 blip.Play();
-
+                
                 firstEnter = false;
                 levelScreenGroup.alpha = 1;
                 levelScreenGroup.interactable = true;
                 levelScreenGroup.blocksRaycasts = true;
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+
+                nitro.SendMessage("toggleReset");
 
                 enemy.SendMessage("toggleMoveAllowed");
 

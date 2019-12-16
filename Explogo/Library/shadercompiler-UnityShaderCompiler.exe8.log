@@ -1,2 +1,4 @@
 Base path: 'E:/Hard Disk/Editor/Data', plugins path 'E:/Hard Disk/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=18299 outsize=8738 ok=1

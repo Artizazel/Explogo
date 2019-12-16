@@ -20,7 +20,7 @@ public class FastFall : MonoBehaviour
 
     public Image downBoostCooldown;
 
-
+    public GameObject sparks;
 
     public FastFall()
     {
@@ -45,6 +45,8 @@ public class FastFall : MonoBehaviour
         if (other.tag == "Floor")
         {
             player.velocity = new Vector3(0, 7, 0);
+
+            Instantiate(sparks, transform.position, transform.rotation);
             
         }
         Invoke("resetBounce", 0.5f);
@@ -70,7 +72,7 @@ public class FastFall : MonoBehaviour
                 if (falling == false)
                 {
                     boom.Play();
-                    Instantiate(Explosion, top.position, transform.rotation);
+                    Instantiate(Explosion, top.position, top.rotation);
                     falling = true;
                 }
             }
