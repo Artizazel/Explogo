@@ -36,16 +36,22 @@ public class DeathReset : MonoBehaviour
         {
             Debug.Log(obj.name);
 
+            
+
+            camera.transform.parent = gameObject.transform;
+
             movementScript.BroadcastMessage("destroyScript");
 
             camera.SendMessage("destroyScript");
 
             movementScript.SendMessage("destroyScript");
 
+
             cameraRig.isKinematic = false;
 
             pogoPole.active = false;
 
+            CollectibleCount.collectibles = 0;
 
             Invoke("resetNitro", 3);
 

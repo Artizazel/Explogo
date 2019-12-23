@@ -45,6 +45,8 @@ public class ResetButton : MonoBehaviour
 
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+                CollectibleCount.collectibles = 0;
+
             }
         }
 

@@ -25,6 +25,8 @@ public class LevelEnd : MonoBehaviour
 
     public AudioSource blip;
 
+    public Animator tntMessage;
+
     bool firstEnter = true;
 
     // Start is called before the first frame update
@@ -46,34 +48,57 @@ public class LevelEnd : MonoBehaviour
         if(other.tag != "Enemy")
         {
 
-            
-            if (firstEnter == true)
+
+
+            if (CollectibleCount.collectibles > 0)
+            {
+                if (firstEnter == true)
+                {
+
+                    blip.Play();
+
+                    firstEnter = false;
+                    levelScreenGroup.alpha = 1;
+                    levelScreenGroup.interactable = true;
+                    levelScreenGroup.blocksRaycasts = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+
+                    nitro.SendMessage("toggleReset");
+
+                    enemy.SendMessage("toggleMoveAllowed");
+
+                    camera.SendMessage("toggleMoveAllowed");
+
+                    movementScript.SendMessage("toggleMoveAllowed");
+
+                    boostScript.SendMessage("toggleMoveAllowed");
+
+                    timer.SendMessage("endScript");
+
+                    
+
+                    Invoke("resetNitro", 3f);
+                }
+
+
+
+            }
+            else
             {
 
-                blip.Play();
-                
-                firstEnter = false;
-                levelScreenGroup.alpha = 1;
-                levelScreenGroup.interactable = true;
-                levelScreenGroup.blocksRaycasts = true;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
 
-                nitro.SendMessage("toggleReset");
-
-                enemy.SendMessage("toggleMoveAllowed");
-
-                camera.SendMessage("toggleMoveAllowed");
-
-                movementScript.SendMessage("toggleMoveAllowed");
-
-                boostScript.SendMessage("toggleMoveAllowed");
-
-                timer.SendMessage("endScript");
+                tntMessage.SetBool("isEnd", true);
 
 
-                Invoke("resetNitro", 3f);
+
+
             }
+
+
+
+
+
 
 
         }

@@ -12,6 +12,10 @@ public class Timer : MonoBehaviour
 
     public GameObject HUD;
 
+    public GameObject highscore;
+
+    public GameObject compHighscore;
+
     float minutes;
 
     float seconds;
@@ -29,9 +33,12 @@ public class Timer : MonoBehaviour
 
         string score = string.Format("{0:00}{1:00}{2:00}", minutes, seconds, fract);
 
-        //Debug.Log(score);
+        Debug.Log(score);
 
         HUD.SendMessage("checkHighscore" , float.Parse(score));
+
+        compHighscore.SendMessage("checkHighscore", float.Parse(score));
+
 
         Destroy(this);
 

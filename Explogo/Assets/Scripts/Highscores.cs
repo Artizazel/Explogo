@@ -78,41 +78,50 @@ public class Highscores : MonoBehaviour
 
     void checkHighscore(float newHighscore)
     {
-        highscorePos = -1;
 
 
 
-        for (int i = 0; i < highscores.Length; i++)
+        if (CollectibleCount.collectibles < 3)
         {
-            if(newHighscore < highscores[i])
+
+
+            Debug.Log("Script Called h");
+
+            highscorePos = -1;
+
+
+
+            for (int i = 0; i < highscores.Length; i++)
             {
-                highscorePos = i;
+                if (newHighscore < highscores[i])
+                {
+                    highscorePos = i;
+                }
+            }
+
+
+            if (highscorePos > -1)
+            {
+
+                endScreen.alpha = 0;
+                endScreen.blocksRaycasts = false;
+                endScreen.interactable = false;
+
+
+                highscoreScreen.alpha = 1;
+                highscoreScreen.blocksRaycasts = true;
+                highscoreScreen.interactable = true;
+
+                victory.Play();
+
+                setHighscore(highscorePos, newHighscore);
+
+
+
             }
         }
+
         
-
-        if(highscorePos > -1)
-        {
-
-            endScreen.alpha = 0;
-            endScreen.blocksRaycasts = false;
-            endScreen.interactable = false;
-
-
-            highscoreScreen.alpha = 1;
-            highscoreScreen.blocksRaycasts = true;
-            highscoreScreen.interactable = true;
-
-            victory.Play();
-
-            setHighscore(highscorePos, newHighscore);
-
-
-            
-        }
-
-
-
     }
 
 

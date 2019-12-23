@@ -27,15 +27,19 @@ public class LevelScreen : MonoBehaviour
     public void resetLevel()
     {
 
+        CollectibleCount.collectibles = 0;
+
         SceneManager.LoadScene(sceneName);
-        Debug.Log("Working");
+        
+       
 
     }
 
     public void nextLevel()
     {
-
+        CollectibleCount.collectibles = 0;
         SceneManager.LoadScene(nextSceneNum);
+        
 
     }
 
