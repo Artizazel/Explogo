@@ -45,15 +45,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -172,33 +168,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10988}
     - Class: 114
-      Script: {instanceID: 11102}
+      Script: {instanceID: 11006}
     - Class: 114
-      Script: {instanceID: 11226}
+      Script: {instanceID: 11104}
     - Class: 114
-      Script: {instanceID: 11284}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 11342}
+      Script: {instanceID: 11286}
     - Class: 114
-      Script: {instanceID: 11484}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 11494}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11528}
+      Script: {instanceID: 11490}
     - Class: 114
-      Script: {instanceID: 11602}
+      Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11500}
     - Class: 114
-      Script: {instanceID: 11666}
+      Script: {instanceID: 11534}
     - Class: 114
-      Script: {instanceID: 2710356}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 2710362}
+      Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 4697592}
+      Script: {instanceID: 11672}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -702,6 +698,12 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: b68755733c104385efebbb6934ec1c82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CompleteHighscores
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -744,10 +746,22 @@ ScriptsOnlyBuild:
     className: CollisionBack
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollectibleCount
+  - hash:
+      serializedVersion: 2
       Hash: ef06403df6fb1a7df38a77755c697fbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MouseAim
+  - hash:
+      serializedVersion: 2
+      Hash: 315e41c945dc07fd0dba9808b6d9cd6f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollectTNT
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -892,24 +906,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 315e41c945dc07fd0dba9808b6d9cd6f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CollectTNT
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CollectibleCount
-  - hash:
-      serializedVersion: 2
-      Hash: b68755733c104385efebbb6934ec1c82
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CompleteHighscores
   platform: 5
   scenePathNames:
   - Assets/Scenes/Level 1.unity
