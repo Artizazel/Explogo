@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CompleteHighscores : MonoBehaviour
 {
@@ -138,7 +139,7 @@ public class CompleteHighscores : MonoBehaviour
         {
             //Debug.Log(highscoreNames[i]);
 
-            PlayerPrefs.SetString("hc" + i.ToString(), highscoreNames[i]);
+            PlayerPrefs.SetString(SceneManager.GetActiveScene().name + "hc" + i.ToString(), highscoreNames[i]);
 
         }
 
@@ -199,7 +200,7 @@ public class CompleteHighscores : MonoBehaviour
         for (int i = 0; i < highscores.Length; i++)
         {
 
-            PlayerPrefs.SetFloat("c" + i.ToString(), highscores[i]);
+            PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "c" + i.ToString(), highscores[i]);
 
 
            
@@ -222,9 +223,9 @@ public class CompleteHighscores : MonoBehaviour
         for (int i = 0; i < highscores.Length; i++)
         {
 
-            highscores[i] = PlayerPrefs.GetFloat("c" + i.ToString());
+            highscores[i] = PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "c" + i.ToString());
 
-            highscoreNames[i] = PlayerPrefs.GetString("hc" + i.ToString());
+            highscoreNames[i] = PlayerPrefs.GetString(SceneManager.GetActiveScene().name + "hc" + i.ToString());
 
             Debug.Log(highscoreNames[i]);
 
@@ -256,9 +257,9 @@ public class CompleteHighscores : MonoBehaviour
         for (int i = 0; i < highscores.Length; i++)
         {
 
-            PlayerPrefs.SetString("hc" + i.ToString(), "Randy");
+            PlayerPrefs.SetString(SceneManager.GetActiveScene().name + "hc" + i.ToString(), "Randy");
 
-            PlayerPrefs.SetFloat("c" + i.ToString(), 999999);
+            PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "c" + i.ToString(), 999999);
 
 
         }
