@@ -50,5 +50,13 @@ public class ResetButton : MonoBehaviour
             }
         }
 
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+
+            SceneManager.LoadScene(0);
+
+        }
+
     }
 }

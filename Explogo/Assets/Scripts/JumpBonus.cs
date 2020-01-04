@@ -66,13 +66,14 @@ public class JumpBonus : MonoBehaviour
     {
 
 
-        if (other.tag == "Floor")
+        if (other.tag == "Boom Fuel" || other.tag == "Floor")
         {
             bounced = false;
 
             boomBoost.color = Color.white;
 
             boostNum = 1;
+
         }
 
 
@@ -161,7 +162,7 @@ public class JumpBonus : MonoBehaviour
                         Instantiate(Explosion, Back.position, transform.rotation);
                     }
 
-                    player.AddForce(transform.up * 15000);
+                    player.AddForce(transform.up * 25000);
 
                     boomBoost.color = Color.clear;
                     boostNum--;

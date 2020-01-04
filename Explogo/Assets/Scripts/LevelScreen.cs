@@ -43,6 +43,13 @@ public class LevelScreen : MonoBehaviour
 
     }
 
+    public void mainMenu()
+    {
+
+        SceneManager.LoadScene(0);
+
+    }
+
 
 
     // Update is called once per frame

@@ -10,6 +10,12 @@ public class MainMenu : MonoBehaviour
 
     public Animator logoMove;
 
+    public Animator buttonMove;
+
+    public Animator levelScreen;
+   // public Animator buttonMove2;
+    //public Animator buttonMove3;
+
     public Button logo;
 
 
@@ -19,7 +25,27 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    
+    public void tutorial()
+    {
+
+        SceneManager.LoadScene(0);
+
+    }
+
+    public void level1()
+    {
+
+        SceneManager.LoadScene(1);
+
+    }
+
+    public void level2()
+    {
+
+        SceneManager.LoadScene(2);
+
+    }
+
     public void playClicked()
     {
 
@@ -27,9 +53,17 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void backClicked()
+    {
+
+        levelScreen.SetTrigger("Back Clicked");
+
+    }
+
     public void levelSelectClicked()
     {
 
+        levelScreen.SetTrigger("Level Screen Click");
 
 
     }
@@ -44,7 +78,12 @@ public class MainMenu : MonoBehaviour
     public void LogoClicked()
     {
 
+        
         logoMove.SetTrigger("Logo Click");
+
+        buttonMove.SetTrigger("Logo Click");
+        //buttonMove2.SetTrigger("Logo Click");
+       // buttonMove3.SetTrigger("Logo Click");
 
         logo.interactable = false;
 

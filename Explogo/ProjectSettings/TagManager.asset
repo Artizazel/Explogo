@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Floor
+  - Boom Fuel
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Collectible
   - NitroModel
   - CC
-  - 
+  - Fuel
   - 
   - 
   - 
