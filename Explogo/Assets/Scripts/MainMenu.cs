@@ -28,21 +28,21 @@ public class MainMenu : MonoBehaviour
     public void tutorial()
     {
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
     }
 
     public void level1()
     {
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
     }
 
     public void level2()
     {
 
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
 
     }
 
