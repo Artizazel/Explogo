@@ -209,6 +209,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building 1 (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 1812401412352052214, guid: 7da6588da57802e47b11937989510d66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3422076712224029157, guid: 7da6588da57802e47b11937989510d66,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10063,8 +10068,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 846004266}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 202.1, y: 1.9, z: 663.7}
-  m_LocalScale: {x: 49.960857, y: 120.39981, z: 59.423923}
+  m_LocalPosition: {x: 202.1, y: 1.9, z: 671.7}
+  m_LocalScale: {x: 49.960857, y: 120.39981, z: 45.994713}
   m_Children: []
   m_Father: {fileID: 969374618}
   m_RootOrder: 8
@@ -10178,6 +10183,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building 1 (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812401412352052214, guid: 7da6588da57802e47b11937989510d66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3422076712224029157, guid: 7da6588da57802e47b11937989510d66,
         type: 3}
@@ -11861,6 +11871,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building 1 (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 1812401412352052214, guid: 7da6588da57802e47b11937989510d66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3422076712224029157, guid: 7da6588da57802e47b11937989510d66,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13434,6 +13449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Building 1 (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 1812401412352052214, guid: 7da6588da57802e47b11937989510d66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3422076712224029157, guid: 7da6588da57802e47b11937989510d66,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13925,6 +13945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building 1 (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812401412352052214, guid: 7da6588da57802e47b11937989510d66,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3422076712224029157, guid: 7da6588da57802e47b11937989510d66,
         type: 3}
@@ -22442,8 +22467,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926535475}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 202.1, y: 1.9, z: 607.3}
-  m_LocalScale: {x: 49.960857, y: 120.39981, z: 79.25726}
+  m_LocalPosition: {x: 202.1, y: 1.9, z: 622.9}
+  m_LocalScale: {x: 49.960857, y: 120.39981, z: 89.10101}
   m_Children: []
   m_Father: {fileID: 969374618}
   m_RootOrder: 7
