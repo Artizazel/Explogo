@@ -9,17 +9,16 @@ public class FullMovement : MonoBehaviour
 
     bool moveAllowed = true;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
 
         Cursor.lockState = CursorLockMode.Locked;
 
-
-
     }
 
 
+    //Is called at the end of the level, stops the player from moving
     void toggleMoveAllowed()
     {
 
@@ -35,6 +34,7 @@ public class FullMovement : MonoBehaviour
     }
 
 
+
     void destroyScript()
     {
 
@@ -42,7 +42,8 @@ public class FullMovement : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
+    //Moves the player in the direction they press depending on their current orientation, will also unlock the cursor when they press escape
     void Update()
     {
 

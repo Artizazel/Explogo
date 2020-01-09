@@ -10,12 +10,8 @@ public class CollectTNT : MonoBehaviour
     public AudioSource boom;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
+    
+    //Is called when the player collects the TNT, plays an explosion sound, emits an explosion, and adds 1 to the collectible count in the 'CollectibleCount' script
     void OnTriggerEnter(Collider other)
     {
 
@@ -38,8 +34,5 @@ public class CollectTNT : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    
 }

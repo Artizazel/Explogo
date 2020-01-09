@@ -14,12 +14,13 @@ public class MouseAim : MonoBehaviour
 
     bool moveAllowed = true;
 
-    // Start is called before the first frame update
+    //Hides the cursor and finds the player object
     void Start()
     {
         Cursor.visible = false;
         player = this.transform.parent.gameObject;
     }
+
 
 
     void toggleMoveAllowed()
@@ -46,7 +47,7 @@ public class MouseAim : MonoBehaviour
 
 
 
-    // Update is called once per frame
+    //Moves the camera and rotates the player based on the position of the cursor, also clamps the range of camera
     void Update()
     {
 

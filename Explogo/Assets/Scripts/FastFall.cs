@@ -28,13 +28,9 @@ public class FastFall : MonoBehaviour
     }
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-
+    //Will reset the cooldown of 'FastFall' either when the player touches the floor, also has a 5 second internal cooldown
     private void OnTriggerEnter(Collider other)
     {
 
@@ -56,7 +52,9 @@ public class FastFall : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+
+
+    //Activates 'FastFall' when the player presses shift
     void Update()
     {
 
@@ -85,6 +83,7 @@ public class FastFall : MonoBehaviour
     }
 
 
+    //Used to allow the player to FastFall again after 5 seconds
     private void resetBounce()
     {
 

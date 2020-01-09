@@ -13,13 +13,12 @@ public class MainMenu : MonoBehaviour
     public Animator buttonMove;
 
     public Animator levelScreen;
-   // public Animator buttonMove2;
-    //public Animator buttonMove3;
 
     public Button logo;
 
 
-    // Start is called before the first frame update
+
+    //Unlocks and shows the cursor so the player can use it if returning from a later scene
     void Start()
     {
 
@@ -28,12 +27,16 @@ public class MainMenu : MonoBehaviour
 
     }
 
+
+    //If the tutorial button is click the tutorial scene is loaded
     public void tutorial()
     {
 
         SceneManager.LoadScene(1);
 
     }
+
+    //If the level 1 button is click the tutorial scene is loaded
 
     public void level1()
     {
@@ -42,20 +45,22 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //If the level 2 button is click the tutorial scene is loaded
+
     public void level2()
     {
 
         SceneManager.LoadScene(3);
 
     }
-
+    //etc
     public void level3()
     {
 
         SceneManager.LoadScene(4);
 
     }
-
+    //etc
     public void level4()
     {
 
@@ -63,6 +68,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //If the Play button is click the tutorial scene is loaded
     public void playClicked()
     {
 
@@ -70,6 +76,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //If the back button is clicked an animator will hide the level screen
     public void backClicked()
     {
 
@@ -77,6 +84,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //If the level select button is clicked an animator will show the level screen
     public void levelSelectClicked()
     {
 
@@ -85,6 +93,7 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    //If the quit button is clicked the application will close
     public void quitClicked()
     {
 
@@ -92,6 +101,8 @@ public class MainMenu : MonoBehaviour
 
     }
 
+
+    //When the explogo logo is clicked it is moved out of the way and the rest of the buttons brought into frame
     public void LogoClicked()
     {
 
@@ -99,17 +110,12 @@ public class MainMenu : MonoBehaviour
         logoMove.SetTrigger("Logo Click");
 
         buttonMove.SetTrigger("Logo Click");
-        //buttonMove2.SetTrigger("Logo Click");
-       // buttonMove3.SetTrigger("Logo Click");
+        
 
         logo.interactable = false;
 
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

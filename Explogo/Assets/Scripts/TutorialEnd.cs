@@ -26,13 +26,9 @@ public class TutorialEnd : MonoBehaviour
     bool firstEnter = true;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
-
+    //Does the same as the level end script but displays a different end screen
     void OnTriggerEnter(Collider other)
     {
 

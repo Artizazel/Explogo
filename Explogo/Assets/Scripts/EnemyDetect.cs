@@ -7,13 +7,8 @@ public class EnemyDetect : MonoBehaviour
 
     public GameObject enemy;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
+    
+    //If the player comes into contact with the enemy's detection sphere, it will tell the enemy then deacivate
     void OnTriggerEnter(Collider other)
     {
 
@@ -28,9 +23,5 @@ public class EnemyDetect : MonoBehaviour
 
     }
 
-            // Update is called once per frame
-            void Update()
-    {
         
-    }
 }

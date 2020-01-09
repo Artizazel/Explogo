@@ -10,7 +10,9 @@ public class LevelScreen : MonoBehaviour
      string sceneName;
      int nextSceneNum;
 
-    // Start is called before the first frame update
+   
+
+    //Finds information about the current and next scene
     void Start()
     {
 
@@ -24,6 +26,8 @@ public class LevelScreen : MonoBehaviour
     }
 
 
+
+    //If the reset button is pressed the scene is reloaded
     public void resetLevel()
     {
 
@@ -35,6 +39,8 @@ public class LevelScreen : MonoBehaviour
 
     }
 
+
+    //If the next level button is pressed the next scene is loaded
     public void nextLevel()
     {
         CollectibleCount.collectibles = 0;
@@ -43,6 +49,9 @@ public class LevelScreen : MonoBehaviour
 
     }
 
+
+
+    //If the main menu button is pressed the main menu scene is loaded
     public void mainMenu()
     {
 
@@ -52,9 +61,5 @@ public class LevelScreen : MonoBehaviour
 
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

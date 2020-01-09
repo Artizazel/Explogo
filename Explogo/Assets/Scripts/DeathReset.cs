@@ -16,19 +16,9 @@ public class DeathReset : MonoBehaviour
     public GameObject movementScript;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-    }
-
+    //When the player touches the deathbox at the bottom of the level, it disables all movement for a few seconds then resets the level
     void OnTriggerEnter(Collider obj)
     {
 
@@ -61,6 +51,7 @@ public class DeathReset : MonoBehaviour
     }
 
 
+    //Finds the current scene and reloads it
     void resetNitro()
     {
 

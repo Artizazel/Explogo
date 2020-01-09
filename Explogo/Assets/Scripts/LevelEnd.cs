@@ -29,18 +29,11 @@ public class LevelEnd : MonoBehaviour
 
     bool firstEnter = true;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
+    //When the player touches the end goal, this will freeze all movement and show the end screen
     void OnTriggerEnter(Collider other)
     {
 
@@ -109,6 +102,7 @@ public class LevelEnd : MonoBehaviour
     }
 
 
+    //Is called 3 seconds after the player ends the level, will put the player in the middle of the goal, just incase the player falls off while in the menu
     void resetNitro()
     {
         nitroRig.velocity = new Vector3(0, 0, 0);

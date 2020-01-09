@@ -7,12 +7,8 @@ public class WallBounce : MonoBehaviour
 
     public GameObject bounceScript;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   
+    //If the main body of the player (not the bottom) hits any other object it will tell the movement script that to reset the cooldown on 'JumpBoost'
     private void OnTriggerEnter(Collider other)
     {
 
@@ -21,9 +17,5 @@ public class WallBounce : MonoBehaviour
 
 
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

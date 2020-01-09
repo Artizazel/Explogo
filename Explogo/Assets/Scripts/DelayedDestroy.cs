@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class DelayedDestroy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+
+
+
+    //Destorys the game object after 3 seconds
+
+
+    
     void Start()
     {
         Invoke("destroyEffect", 3f);
@@ -18,9 +25,5 @@ public class DelayedDestroy : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

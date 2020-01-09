@@ -13,13 +13,9 @@ public class SateliteBlip : MonoBehaviour
 
     public float interval = 8f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
+    //Will active the satelite particle breifly every 8 seconds
     void FixedUpdate()
     {
 

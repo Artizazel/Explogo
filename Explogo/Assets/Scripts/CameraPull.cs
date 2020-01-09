@@ -21,12 +21,12 @@ public class CameraPull : MonoBehaviour
     bool resettingCamera = false;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+
+    //Script for pulling the camera out of geometry closer to the player and back
+
+
+    
     private void OnTriggerEnter(Collider other)
     {
 
@@ -41,13 +41,15 @@ public class CameraPull : MonoBehaviour
 
     }
 
+
+    //Is called briefly after the camera point collides with any geometry, puts the script in a 'push in' state using booleans
     void pushIn()
     {
         resettingCamera = false;
         inObject = true;
     }
 
-
+    //Is called briefly after the camera point exits with any geometry, puts the script in a 'push out' state using booleans
     void pushOut()
     {
         inObject = false;
@@ -56,16 +58,16 @@ public class CameraPull : MonoBehaviour
 
 
 
-    // Update is called once per frame
     void Update()
     {
 
+        //Gradually moves the main camera to the pull point (closer to the player) 
         if (inObject == true)
         {
             camTrans.position = Vector3.MoveTowards(camTrans.position, pullPoint.position, 0.2f);
         }
 
-
+        //Gradually moves the main camera to the camera point (away from the player)
         if (resettingCamera == true)
         {
             camTrans.position = Vector3.MoveTowards(camTrans.position, cameraPoint.position, 1f);

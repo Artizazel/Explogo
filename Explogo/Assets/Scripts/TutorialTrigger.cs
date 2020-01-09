@@ -9,17 +9,10 @@ public class TutorialTrigger : MonoBehaviour
 
     public Rigidbody nitro;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //Detects when the player has entered a tutorial zone and will tell TutorialScript which zone they have entered
+
 
     void OnTriggerExit(Collider other)
     {

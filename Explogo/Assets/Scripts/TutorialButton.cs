@@ -8,15 +8,11 @@ public class TutorialButton : MonoBehaviour
 
     public GameObject button;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
 
-    // Update is called once per frame
-
+ 
+    //Moves the walls down using an animator when the player touches a button, and destroys the button
         void OnTriggerEnter()
     {
 
@@ -28,8 +24,5 @@ public class TutorialButton : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        
-    }
+    
 }

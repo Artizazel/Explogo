@@ -10,15 +10,7 @@ public class ResetButton : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-
-
-
-    }
-
+    //Won't let the player reset the level using 'R' if they are in a menu
     void toggleReset()
     {
 
@@ -34,7 +26,7 @@ public class ResetButton : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    //Reloads the current level if R is pressed, and loads the menu scene if esc is press
     void Update()
     {
 

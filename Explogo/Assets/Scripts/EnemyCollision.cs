@@ -11,21 +11,17 @@ public class EnemyCollision : MonoBehaviour
 
     public Transform enemyTrans;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         enemyTrans = GetComponent<Transform>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+   
 
 
 
-    }
-
+    //When the enemy touches any surface it emits an electrical explosion prefab and plays a beep noise
     private void OnCollisionEnter()
     {
 

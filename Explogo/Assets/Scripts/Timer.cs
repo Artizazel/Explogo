@@ -22,12 +22,8 @@ public class Timer : MonoBehaviour
 
     float fract;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
+    //Is called when the player reaches the end of the level, sends the time to the highscore script then destroys itself the the timer doesn't count up anymore
     void endScript()
     {
 
@@ -44,7 +40,9 @@ public class Timer : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
+
+    //Formats deltatime into minutes, seconds, and fractions of a second, then displays them on the HUD timer
     void FixedUpdate()
     {
         time += Time.deltaTime/2;

@@ -21,7 +21,10 @@ public class EnemyFollow : MonoBehaviour
 
     bool moveAllowed = true;
 
-    // Start is called before the first frame update
+
+
+
+    //Sets all of the relevant variables
     void Start()
     {
         playerObj = GameObject.Find("Nitro");
@@ -34,6 +37,8 @@ public class EnemyFollow : MonoBehaviour
     }
 
 
+
+    //Used by the EnemyDetect script to tell this script that the enemy can now follow the player
     void detected()
     {
 
@@ -42,6 +47,7 @@ public class EnemyFollow : MonoBehaviour
     }
 
 
+    //Stops the enemy from moving when the player has completed the level
     void toggleMoveAllowed()
     {
 
@@ -62,7 +68,7 @@ public class EnemyFollow : MonoBehaviour
 
 
 
-    // Update is called once per frame
+    //Constantly aims at the player and follows them when detected, will regularly stop all momentum in order to chase more effectively and seem more robotic
     void FixedUpdate()
     {
 

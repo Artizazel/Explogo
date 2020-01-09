@@ -12,7 +12,10 @@ public class CollectibleCount : MonoBehaviour
     [SerializeField]
     public static Text counter;
 
-    // Start is called before the first frame update
+
+    //Updates the counter on screen depending on the value of 'collectibles'
+
+
     void Start()
     {
         counter = GetComponent<Text>();
@@ -27,9 +30,5 @@ public class CollectibleCount : MonoBehaviour
     
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 }

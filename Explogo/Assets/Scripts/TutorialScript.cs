@@ -31,7 +31,18 @@ public class TutorialScript : MonoBehaviour
     bool btnHit = false;
     bool inDownTut = false;
 
-    // Start is called before the first frame update
+    
+
+
+
+
+
+
+    //Displays a tutorial message when the player enters a tutorial zone, then hides the text when the player leaves the tutorial zone
+
+
+
+
     void Start()
     {
         jumpTut.enabled = false;

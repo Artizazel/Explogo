@@ -39,7 +39,12 @@ public class JumpBonus : MonoBehaviour
 
     bool moveAllowed = true;
 
-    // Start is called before the first frame update
+
+
+
+
+
+    //Sets the game to be twice as fast
     void Start()
     {
 
@@ -48,6 +53,8 @@ public class JumpBonus : MonoBehaviour
     }
 
 
+
+    //Used by other scripts to reset the 'JumpBoost' cooldown upon hitting a wall instead of a floor
     private void hitWall()
     {
 
@@ -62,6 +69,8 @@ public class JumpBonus : MonoBehaviour
     }
 
 
+
+    //Resets the cooldown of 'BoomBoost' and 'JumpBoost' when the player hits the ground or 'Boom Fuel'
     private void OnTriggerEnter(Collider other)
     {
 
@@ -79,6 +88,9 @@ public class JumpBonus : MonoBehaviour
 
     }
 
+
+
+    //Stops the player from being able to use abilities when in menus
     void toggleMoveAllowed()
     {
 
@@ -94,7 +106,8 @@ public class JumpBonus : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    //Will activate 'JumpBoost' if the player presses space and it's not on cooldown
+    //Will Will activate 'BoomBoost' if the player presses the left mouse button and it's not on cooldown
     void Update()
     {
 

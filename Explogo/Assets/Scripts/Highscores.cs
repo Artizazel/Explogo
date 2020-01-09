@@ -38,7 +38,13 @@ public class Highscores : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
+    //Stores and displays an array of highscores in which the player collected less than 3 of the TNT
+
+
+
+
+
+    //fills the highscores array with fake scores (in case no scores are set yet) then retrives the scores set by previous plays
     void Start()
     {
 
@@ -46,37 +52,28 @@ public class Highscores : MonoBehaviour
         scoreboard[1] = second;
         scoreboard[0] = third;
 
-        //PlayerPrefs.DeleteAll();
+        
 
 
         fillArray();
 
        
-        //resetScores();
+        
         
 
         getHighscores();
 
 
-        for (int i = 0; i < highscores.Length; i++)
-        {
+        
 
-
-            //Debug.Log(PlayerPrefs.GetFloat(i.ToString()) + "  highscore");
-
-
-        }
-
-        /*
-        highscores[0] = highscore0;
-
-        highscores[1] = highscore1;
-
-        highscores[2] = highscore2;
-        */
+        
 
     }
 
+
+
+
+    //Checks if the player collected less than 3 of the TNT in the level, then checks if the time they finished with was less that any of the top 3
     void checkHighscore(float newHighscore)
     {
 
@@ -126,17 +123,18 @@ public class Highscores : MonoBehaviour
     }
 
 
+    //Takes the input from the text box and stores it in a separate array at the same index as the highscore
     public void highscoreName()
     {
 
         highscoreNames[highscorePos] = input.text;
 
-        //Debug.Log(highscoreNames[highscorePos]);
+        
 
 
         for (int i = 0; i < highscoreNames.Length; i++)
         {
-            //Debug.Log(highscoreNames[i]);
+            
 
             PlayerPrefs.SetString(SceneManager.GetActiveScene().name + "h" + i.ToString(), highscoreNames[i]);
 
@@ -158,6 +156,7 @@ public class Highscores : MonoBehaviour
 
 
 
+    //Rearranges the array to fit the new score in (push and pop)
     void setHighscore(int position, float highscore)
     {
 
@@ -213,6 +212,8 @@ public class Highscores : MonoBehaviour
     }
 
 
+
+    //Retrives the scores from playerpreferences and puts them in the realtime array, then adds the scores to the ingame leaderboard
     void getHighscores()
     {
 
@@ -248,6 +249,7 @@ public class Highscores : MonoBehaviour
     }
 
 
+    //Overrides all of the variables in the player preferences with maximum time scores
     void resetScores()
     {
 
@@ -266,6 +268,8 @@ public class Highscores : MonoBehaviour
 
     }
 
+
+    //Overrides all of the variables in the arrays with maximum time scores
     void fillArray()
     {
 
@@ -288,7 +292,8 @@ public class Highscores : MonoBehaviour
 
 
 
-    // Update is called once per frame
+
+    //Is used to reset scores when ingame
     void Update()
     {
 
