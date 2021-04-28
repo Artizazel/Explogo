@@ -29,9 +29,20 @@ public class LevelEnd : MonoBehaviour
 
     bool firstEnter = true;
 
-    
 
-   
+    private void Start()
+    {
+        tntMessage = GameObject.Find("TNT Message").GetComponent<Animator>();
+
+        nitro = GameObject.Find("Nitro");
+        nitroRig = nitro.GetComponent<Rigidbody>();
+        movementScript = nitro;
+        camera = GameObject.Find("Main Camera");
+        boostScript = GameObject.Find("Pogo Pole");
+        timer = GameObject.Find("HUD");
+        levelScreenGroup = GameObject.Find("Level End Screen").GetComponent<CanvasGroup>();
+    }
+
 
     //When the player touches the end goal, this will freeze all movement and show the end screen
     void OnTriggerEnter(Collider other)

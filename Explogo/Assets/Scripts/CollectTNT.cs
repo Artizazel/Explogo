@@ -9,8 +9,11 @@ public class CollectTNT : MonoBehaviour
 
     public AudioSource boom;
 
+    private void Start()
+    {
+        boom = GameObject.Find("Explogo").GetComponent<AudioSource>();
+    }
 
-    
     //Is called when the player collects the TNT, plays an explosion sound, emits an explosion, and adds 1 to the collectible count in the 'CollectibleCount' script
     void OnTriggerEnter(Collider other)
     {

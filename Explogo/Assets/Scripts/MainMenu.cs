@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering.PostProcessing;
 
 public class MainMenu : MonoBehaviour
 {
-
-
+    
     public Animator logoMove;
 
     public Animator buttonMove;
@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
 
     public Button logo;
 
+    public Image postButton;
 
 
     //Unlocks and shows the cursor so the player can use it if returning from a later scene
@@ -25,6 +26,16 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
+
+
+        if (PlayerPrefs.GetInt("postProcessing") == 1)
+        {
+            postButton.color = Color.green;
+        }
+        if (PlayerPrefs.GetInt("postProcessing") == 0)
+        {
+            postButton.color = Color.red;
+        }
     }
 
 
@@ -117,5 +128,23 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    
+    public void PostProcessClicked()
+    {
+        if(PlayerPrefs.GetInt("postProcessing") == 1)
+        {
+            PlayerPrefs.SetInt("postProcessing", 0);
+            GameObject.Find("PostProcess").GetComponent<PostProcessVolume>().enabled = false;
+            postButton.color = Color.red;
+        }
+        else if (PlayerPrefs.GetInt("postProcessing") == 0)
+        {
+            PlayerPrefs.SetInt("postProcessing", 1);
+            GameObject.Find("PostProcess").GetComponent<PostProcessVolume>().enabled = true;
+            postButton.color = Color.green;
+        }
+        
+        
+    }
+
+
 }

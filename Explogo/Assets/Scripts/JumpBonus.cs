@@ -36,6 +36,9 @@ public class JumpBonus : MonoBehaviour
 
     public Image boomBoost;
 
+    public Image stopBoost;
+
+    bool stopBoostCooledDown = true;
 
     bool moveAllowed = true;
 
@@ -49,6 +52,10 @@ public class JumpBonus : MonoBehaviour
     {
 
         Time.timeScale = 2f;
+
+        jumpBoost = GameObject.Find("Jump Boost Cooldown").GetComponent<Image>();
+        boomBoost = GameObject.Find("Boom Boost Cooldown").GetComponent<Image>();
+        stopBoost = GameObject.Find("Stop Boost Cooldown").GetComponent<Image>();
 
     }
 
@@ -80,6 +87,10 @@ public class JumpBonus : MonoBehaviour
             bounced = false;
 
             boomBoost.color = Color.white;
+
+            stopBoost.color = Color.white;
+
+            stopBoostCooledDown = true;
 
             boostNum = 1;
 
@@ -135,6 +146,26 @@ public class JumpBonus : MonoBehaviour
 
         if (moveAllowed == true)
         {
+
+
+            if(Input.GetMouseButtonDown(1))
+            {
+
+                if(stopBoostCooledDown == true)
+                {
+                    boom.Play();
+
+                    player.velocity = new Vector3(0, 0, 0);
+
+                    Instantiate(Explosion, transform.position, transform.rotation);
+
+                    stopBoost.color = Color.clear;
+
+                    stopBoostCooledDown = false;
+                }
+
+
+            }
 
             if (Input.GetMouseButtonDown(0))
             {

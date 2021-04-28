@@ -83,7 +83,6 @@ public class CompleteHighscores : MonoBehaviour
         if (CollectibleCount.collectibles == 3)
         {
 
-            Debug.Log("Script Called hc");
 
             highscorePos = -1;
 

@@ -28,7 +28,10 @@ public class FastFall : MonoBehaviour
     }
 
 
-    
+    private void Start()
+    {
+        downBoostCooldown =  GameObject.Find("Down Boost Cooldown").GetComponent<Image>();
+    }
 
     //Will reset the cooldown of 'FastFall' either when the player touches the floor, also has a 5 second internal cooldown
     private void OnTriggerEnter(Collider other)

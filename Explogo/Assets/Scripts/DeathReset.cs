@@ -16,7 +16,20 @@ public class DeathReset : MonoBehaviour
     public GameObject movementScript;
 
 
-    
+
+
+    void Start()
+    {
+        camera = GameObject.Find("Main Camera");
+
+        cameraRig = camera.GetComponent<Rigidbody>();
+
+        pogoPole = GameObject.Find("Pogo Pole");
+
+        movementScript = GameObject.Find("Nitro");
+
+    }
+
 
     //When the player touches the deathbox at the bottom of the level, it disables all movement for a few seconds then resets the level
     void OnTriggerEnter(Collider obj)
