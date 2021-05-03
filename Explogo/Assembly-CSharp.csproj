@@ -79,13 +79,13 @@
     <Compile Include="Assets\Scripts\Collision\CollisionLeft.cs" />
     <Compile Include="Assets\Scripts\Collision\CollisionBack.cs" />
     <Compile Include="Assets\Scripts\CollectibleCount.cs" />
+    <Compile Include="Assets\Scripts\PostProcessToggle.cs" />
     <Compile Include="Assets\Scripts\MouseAim.cs" />
     <Compile Include="Assets\Scripts\CollectTNT.cs" />
     <Compile Include="Assets\Scripts\CameraPull.cs" />
     <Compile Include="Assets\Scripts\TutorialButton.cs" />
     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
     <Compile Include="Assets\Scripts\DeathReset.cs" />
-    <Compile Include="Assets\Scripts\PostProcessToggle.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />

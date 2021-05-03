@@ -49,7 +49,7 @@ public class CollisionLeft : MonoBehaviour
         {
 
             boom.Play();
-            player.AddForce(transform.right * 60000f);
+            player.AddForce(transform.right * 30000f);
             Instantiate(Explosion, Left.position, transform.rotation);
 
         }

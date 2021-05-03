@@ -45,7 +45,7 @@ public class CollisionRight : MonoBehaviour
         {
 
             boom.Play();
-            player.AddForce(transform.right * -60000f);
+            player.AddForce(transform.right * -30000f);
         Instantiate(Explosion, Right.position, transform.rotation);
         }
 

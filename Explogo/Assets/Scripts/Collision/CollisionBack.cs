@@ -47,7 +47,7 @@ public class CollisionBack : MonoBehaviour
 
             boom.Play();
 
-            player.AddForce(transform.forward * 60000f);
+            player.AddForce(transform.forward * 30000f);
         Instantiate(Explosion, Back.position, transform.rotation);
 
         }

@@ -30694,6 +30694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nitro
       objectReference: {fileID: 0}
+    - target: {fileID: 4007437355544302735, guid: 213a97154f4bd2a4eaf69a7e5d644030,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 788e0b92dd68e1644a65bae17ff4a331, type: 3}
     - target: {fileID: 4007437355544302742, guid: 213a97154f4bd2a4eaf69a7e5d644030,
         type: 3}
       propertyPath: m_LocalPosition.x

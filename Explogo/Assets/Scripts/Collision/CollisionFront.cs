@@ -44,7 +44,7 @@ public class CollisionFront : MonoBehaviour
         {
             boom.Play();
 
-            player.AddForce(transform.forward * -60000f);
+            player.AddForce(transform.forward * -30000f);
         Instantiate(Explosion, Front.position, transform.rotation);
 
         }
